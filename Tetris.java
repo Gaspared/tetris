@@ -424,7 +424,8 @@ public class Tetris extends Application {
 					full++;
 			}
 			if (full == MESH.length)
-				lines.add(i + lines.size());
+			lines.add(i);
+			//lines.add(i + lines.size());
 			full = 0;
 		}
 		if (lines.size() > 0)
